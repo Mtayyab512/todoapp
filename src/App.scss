@@ -1,0 +1,183 @@
+body {
+  background-color: #101010; /* Dark background for a techy feel */
+  color: #ffffff; /* White text for contrast */
+  overflow: hidden; /* Hide overflow to maintain clean look */
+  font-family: 'Roboto', sans-serif; /* Updated font for a modern techy look */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem; /* Larger font size for emphasis */
+  color: #03a9f4; /* Bright blue color for headings */
+}
+
+.todo-wrapper {
+  background: #1f1f1f; /* Dark gray background */
+  padding: 2%;
+  width: 90%; /* Wider wrapper for more content */
+  margin: 3% auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.6); /* Soft shadow for depth */
+
+  .todo-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid #424242; /* Darker border for separation */
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    .todo-input-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 10px;
+
+      label {
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #03a9f4; /* Blue label text */
+      }
+
+      input[type="text"] {
+        padding: 12px;
+        border: none;
+        background-color: #282828; /* Dark input background */
+        color: #ffffff; /* White text */
+        width: 100%;
+        max-width: 300px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        &:focus {
+          outline: none;
+          background-color: #383838; /* Slightly lighter on focus */
+        }
+      }
+    }
+  }
+}
+
+.primaryBtn {
+  background-color: #03a9f4; /* Bright blue button */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem; /* Medium font size */
+  font-weight: bold;
+
+  &:hover {
+    background-color: #0288d1; /* Darker blue on hover */
+  }
+}
+
+.secondaryBtn {
+  background-color: #616161; /* Gray button */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem; /* Medium font size */
+  font-weight: bold;
+
+  &.active {
+    background-color: #03a9f4; /* Active state blue */
+  }
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+
+  .btn-area {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .todo-list-item {
+    background-color: #282828; /* Dark item background */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4); /* Slightly lighter shadow */
+
+    h3 {
+      font-size: 1.5rem; /* Larger title */
+      color: #03a9f4;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #ffffff;
+      margin-top: 10px;
+    }
+
+    .icon,
+    .check-icon {
+      font-size: 1.8rem; /* Larger icons */
+      color: #ffffff;
+      cursor: pointer;
+
+      &:hover {
+        color: #f44336; /* Red on hover */
+      }
+    }
+  }
+}
+
+.edit__wrapper {
+  background-color: #424242; /* Darker background */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.4);
+
+  input,
+  textarea {
+    border: 1px solid #616161; /* Lighter border */
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 5px;
+    background-color: #282828; /* Dark input background */
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: #03a9f4; /* Focus border color */
+    }
+  }
+
+  .primaryBtn {
+    align-self: flex-end;
+    margin-top: 15px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #03a9f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0288d1; /* Darker blue on hover */
+    }
+  }
+}
